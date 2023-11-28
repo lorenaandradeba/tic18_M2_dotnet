@@ -46,3 +46,12 @@ var clientesOrdem = clientes.OrderBy(c => c.Nome);
             Console.WriteLine($"Nome: {cliente.Nome}, Idade: {cliente.Idade}");
         }
         Console.WriteLine("");
+
+System.Console.WriteLine("4. Clientes em ordem idade");
+System.Console.WriteLine("--------------------------------------");
+var clientesOrdemIdade = clientes.OrderBy(c => c.Idade);
+ foreach (var cliente in clientesOrdemIdade)
+        {
+            Console.WriteLine($"Nome: {cliente.Nome}, Idade: {cliente.Idade}");
+        }
+        Console.WriteLine("");
